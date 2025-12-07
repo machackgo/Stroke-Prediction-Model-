@@ -1,0 +1,67 @@
+[[1.         0.         0.47509766 ... 0.         1.         0.        ]
+ [0.         1.         0.67041016 ... 0.         1.         0.        ]
+ [1.         0.         0.71923828 ... 1.         0.         0.        ]
+ ...
+ [1.         0.         0.74365234 ... 1.         0.         0.        ]
+ [0.         1.         0.37744141 ... 0.         0.         0.        ]
+ [1.         0.         0.07226562 ... 0.         0.         0.        ]]
+[0 0 0 ... 0 0 0]
+[[1.         0.         0.75585938 ... 0.         0.         0.        ]
+ [0.         1.         0.97558594 ... 0.         1.         0.        ]
+ [0.         1.         0.65820312 ... 1.         0.         0.        ]
+ ...
+ [0.         1.         0.609375   ... 0.         1.         0.        ]
+ [0.         1.         0.45068359 ... 0.         0.         1.        ]
+ [1.         0.         0.79248047 ... 0.         0.         1.        ]]
+[0 0 0 ... 0 0 0]
+ROC-AUC (baseline): 0.7887441638370118
+              precision    recall  f1-score   support
+
+           0      0.979     0.675     0.799      1216
+           1      0.100     0.710     0.176        62
+
+    accuracy                          0.677      1278
+   macro avg      0.539     0.692     0.487      1278
+weighted avg      0.936     0.677     0.769      1278
+
+Average Precision (AUPRC): 0.16310282290362488
+Best params: {'class_weight': {0: 1, 1: 5}, 'criterion': 'gini', 'max_depth': 5, 'max_features': 0.5, 'min_samples_leaf': 1, 'min_samples_split': 5}
+Chosen ccp_alpha: 0.006846117711203387 ROC-AUC (pruned): 0.798188136672326
+Saved pruned model to stroke_dt_model.pkl
+F1-optimal threshold: 0.4688
+              precision    recall  f1-score   support
+
+           0      0.970     0.916     0.942      1216
+           1      0.209     0.435     0.283        62
+
+    accuracy                          0.893      1278
+   macro avg      0.589     0.676     0.612      1278
+weighted avg      0.933     0.893     0.910      1278
+
+High-recall threshold (~80% recall): 0.1316
+              precision    recall  f1-score   support
+
+           0      0.986     0.624     0.764      1216
+           1      0.100     0.823     0.179        62
+
+    accuracy                          0.634      1278
+   macro avg      0.543     0.723     0.472      1278
+weighted avg      0.943     0.634     0.736      1278
+
+Youden J threshold: 0.1316
+              precision    recall  f1-score   support
+
+           0      0.986     0.624     0.764      1216
+           1      0.100     0.823     0.179        62
+
+    accuracy                          0.634      1278
+   macro avg      0.543     0.723     0.472      1278
+weighted avg      0.943     0.634     0.736      1278
+
+
+Generated figures:
+ - /Users/mohammedmubashiruddinfaraz/Documents/Machine_Learning/Decision_Tree/dt_confusion.png
+ - /Users/mohammedmubashiruddinfaraz/Documents/Machine_Learning/Decision_Tree/dt_roc.png
+ - /Users/mohammedmubashiruddinfaraz/Documents/Machine_Learning/Decision_Tree/dt_pr.png
+ - /Users/mohammedmubashiruddinfaraz/Documents/Machine_Learning/Decision_Tree/dt_feature_importance.png
+ - /Users/mohammedmubashiruddinfaraz/Documents/Machine_Learning/Decision_Tree/dt_tree.png

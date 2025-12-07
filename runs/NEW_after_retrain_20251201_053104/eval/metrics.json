@@ -1,0 +1,17 @@
+{
+  "tag": "NEW",
+  "dataset": "/Users/mohammedmubashiruddinfaraz/Documents/Machine_Learning/Decision_Tree/stroke_data_preprocessed.csv",
+  "roc_auc": 0.7894272601867574,
+  "auprc": 0.1453364257771234,
+  "threshold": 0.5,
+  "confusion_matrix": [
+    [
+      1004,
+      212
+    ],
+    [
+      23,
+      39
+    ]
+  ]
+}

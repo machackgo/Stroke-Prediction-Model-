@@ -1,0 +1,6 @@
+stroke-risk-prediction-app/node_modules/
+stroke-risk-prediction-app/.next/
+.DS_Store
+__pycache__/
+.venv/
+.env
